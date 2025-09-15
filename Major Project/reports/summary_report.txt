@@ -1,0 +1,38 @@
+
+CARDIOVASCULAR DISEASE PREDICTION - SUMMARY REPORT
+=================================================
+
+Dataset Information:
+- Total samples: 70000
+- Total features: 13
+- Disease prevalence: 50.0%
+
+Model Performance Results:
+                 Model  Test Accuracy  CV Mean Accuracy   CV Std
+Support Vector Machine       0.723381          0.725592 0.003590
+         Random Forest       0.711667          0.716429 0.004201
+   Logistic Regression       0.711571          0.715388 0.006417
+   K-Nearest Neighbors       0.643048          0.643367 0.005466
+         Decision Tree       0.628143          0.633980 0.003957
+
+Best Performing Model: Support Vector Machine
+- Test Accuracy: 0.7234
+- Cross-Validation Accuracy: 0.7256 (+/- 0.0072)
+
+Key Insights:
+1. The dataset contains 70000 samples with 13 features
+2. 50.0% of patients have heart disease
+3. Support Vector Machine achieved the highest accuracy of 0.7234
+4. All models performed reasonably well, indicating good predictive features
+
+Features with Strongest Correlation to Heart Disease:
+target         1.000000
+bp_category    0.238391
+age            0.238159
+cholesterol    0.221147
+weight         0.181660
+
+Recommendations:
+- The Support Vector Machine model is recommended for cardiovascular disease prediction
+- Further feature engineering could potentially improve performance
+- Consider ensemble methods for even better results
